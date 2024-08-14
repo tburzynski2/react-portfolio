@@ -13,6 +13,13 @@ const ResumePage = () => {
           <br />
           <a href="mailto:tburzynski2@yahoo.com">tburzynski2@yahoo.com</a>
         </address>
+        <a
+          href="../../public/Resume.pdf"
+          className="btn btn-primary mt-4"
+          download
+        >
+          Download Resume (PDF)
+        </a>
       </header>
 
       <div style={{ maxWidth: 800 + "px" }} className="mx-auto">
