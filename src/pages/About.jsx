@@ -1,5 +1,4 @@
 import React from "react";
-import "../../public/images/tom-b-avatar.png";
 
 const AboutPage = () => {
   return (
@@ -8,7 +7,7 @@ const AboutPage = () => {
 
       <div className="text-center mb-5">
         <img
-          src="../../public/images/tom-b-avatar.png"
+          src="/images/tom-b-avatar.png"
           alt="Tom Burzynski's headshot"
           className="rounded-circle"
           style={{ width: "150px", height: "150px" }}
