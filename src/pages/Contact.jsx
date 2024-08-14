@@ -46,42 +46,55 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <h2 className="section-title">Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name</label>
+    <section id="contact" className="container py-5">
+      <h2 className="text-center mb-4">Contact Me</h2>
+      <form onSubmit={handleSubmit} className="w-75 mx-auto">
+        <div className="form-group mb-3">
+          <label htmlFor="name">Name</label>
           <input
             type="text"
+            id="name"
             name="name"
+            className={`form-control ${errors.name ? "is-invalid" : ""}`}
             value={formData.name}
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <div className="invalid-feedback">{errors.name}</div>}
         </div>
-        <div>
-          <label>Email</label>
+        <div className="form-group mb-3">
+          <label htmlFor="email">Email</label>
           <input
             type="email"
+            id="email"
             name="email"
+            className={`form-control ${errors.email ? "is-invalid" : ""}`}
             value={formData.email}
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && (
+            <div className="invalid-feedback">{errors.email}</div>
+          )}
         </div>
-        <div>
-          <label>Message</label>
+        <div className="form-group mb-4">
+          <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
+            className={`form-control ${errors.message ? "is-invalid" : ""}`}
+            rows="5"
             value={formData.message}
             onChange={handleChange}
             onBlur={handleBlur}
           ></textarea>
-          {errors.message && <p>{errors.message}</p>}
+          {errors.message && (
+            <div className="invalid-feedback">{errors.message}</div>
+          )}
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-primary btn-block">
+          Submit
+        </button>
       </form>
     </section>
   );
