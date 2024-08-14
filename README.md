@@ -44,7 +44,7 @@ This project is a professional portfolio built using React, showcasing my web de
 
 ## Screenshot
 
-![React portfolio screenshot](https://classy-praline-c32931.netlify.app/images/tom-b-avatar.png)
+![React portfolio screenshot](https://github.com/tburzynski2/react-portfolio/blob/main/public/images/tom-b-react-portfolio-screenshot.png?raw=true)
 
 ## Deployed Application
 
